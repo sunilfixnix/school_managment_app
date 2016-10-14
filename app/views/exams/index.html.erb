@@ -1,0 +1,10 @@
+<h2> Exam status list with date and time </h2>
+
+<% @exam.each do |ex| %>
+	<%= ex.name %><br/>
+	<%= ex.start_date %><br/>
+	<%= ex.end_date %><br/><br/>
+
+	<% end %>
+
+	<%= link_to 'New Exam Sheet', exams_exams_new_path %>

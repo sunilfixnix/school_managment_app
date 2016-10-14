@@ -1,0 +1,35 @@
+
+
+	<h2> Create new Teacher as per standard</h2>
+
+<%= form_for(@teacher) do |f| %>
+
+	<%= f.label :first_name %><br/>
+	<%= f.text_field :first_name %><br/>
+	<%= f.label :last_name %><br/>
+	<%= f.text_field :last_name %><br/>
+	<%= f.label :age %><br/>
+	<%= f.text_field :age %><br/>
+	<%= f.label :email_id %><br/>
+	<%= f.text_field :email_id %><br/>
+	<%= f.label :phone_no %><br/>
+	<%= f.text_field :phone_no %><br/>
+	<%= f.label :address %><br/>
+	<%= f.text_field :address %><br/>
+	<%= f.label :area_of_expertise %><br/>
+	<%= f.text_field :area_of_expertise %><br/>
+	<%= f.label :qualification %><br/>
+	<%= f.text_field :qualification %><br
+	<%= f.label :experience %><br/>
+	<%= f.text_field :experience %><br
+	<%= f.label :standard_id %><br/>
+	<%= f.text_field :standard_id %><br
+
+
+
+	<div class="actions">
+    <%= f.submit "Create" %><br/> 
+  </div> 
+
+
+	<% end %>

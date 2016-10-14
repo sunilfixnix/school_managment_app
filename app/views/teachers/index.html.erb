@@ -1,0 +1,17 @@
+<h2> Teachers List according to standards in school </h2>
+
+<% @teacher.each do |teach| %>
+
+	<%= teach.first_name  %><br/>
+	<%= teach.last_name  %><br/>
+	<%= teach.age  %><br/>
+	<%= teach.email_id  %><br/>
+	<%= teach.phone_no  %><br/>
+	<%= teach.address  %><br/>
+	<%= teach.area_of_expertise  %><br/>
+	<%= teach.qualification  %><br/>
+	<%= teach.experience  %><br/><br/>
+
+	<% end %>
+
+	<%= link_to 'New Teacher',  teachers_teachers_new_path %>

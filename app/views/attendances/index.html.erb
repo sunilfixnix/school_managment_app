@@ -1,0 +1,9 @@
+<h2> Status of attendance according to student_id </h2>
+
+<% @attendance.each do |att| %>
+	<%= att.status %><br/>
+
+	<% end %>
+
+	<%= link_to 'Create New Status', attendances_attendances_new_path %>
+	

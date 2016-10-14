@@ -1,0 +1,25 @@
+<h2> Create New Exam sheet </h2>
+
+<%= form_for(@exam) do |f| %>  
+
+
+ 
+	  <%= f.label :name %><br/> 
+    <%= f.text_field :name %><br/> 
+    <%= f.label :start_date %><br/> 
+    <%= f.text_field :start_date %> <br/> 
+    <%= f.label :end_date %><br/> 
+    <%= f.text_field :end_date %> <br/> 
+    <%= f.label :subject_id %><br/> 
+    <%= f.text_field :subject_id %><br/> 
+    <%= f.label :standard_id %><br/> 
+    <%= f.text_field :standard_id %> <br/> 
+    <%= f.label :section_id %><br/> 
+    <%= f.text_field :section_id %> <br/><br/> 
+  </div> 
+
+  <div class="actions">
+    <%= f.submit "Create" %><br/> 
+  </div> 
+
+<% end %>

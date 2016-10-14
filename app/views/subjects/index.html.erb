@@ -1,0 +1,9 @@
+<h2> Subjects List according to standards </h2>
+
+<% @subject.each do |sub| %>
+	<%= sub.name %><br/>
+	<%= sub.description %><br/>
+	<%= sub.credit %><br/><br/>
+
+	<% end %>
+<%= link_to 'New Subject', subjects_subjects_new_path %>

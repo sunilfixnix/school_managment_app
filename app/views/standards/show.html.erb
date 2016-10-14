@@ -1,0 +1,15 @@
+<h2> standareds list in school by ID </h2>
+ 
+ 
+ <%= @standard.name %><br/></br>
+
+ <% @section.each do |sec| %>
+ <%= sec.name %><br/>
+ <%= sec.standard.name %><br/></br>
+
+ <%end %>
+
+
+
+
+<%= link_to 'Edit', "standards/edit" %>

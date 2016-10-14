@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SchoolManagmentApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body bgcolor="lightgreen">
+  <h4>
+  <marquee> School Managment System </marquee>
+  </h4>
+
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>School Managment System</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="#">SMS</a></li>
+ 
+  </ul>
+</nav>
+
+<article>
+  <h1>SMS</h1>
+  <p>Anywhere and Anytime. Our Web School system is ensured with constant access from any places where Internet is available.Administrators can easily monitor and manage information and records on this software. Teachers, students and parents are also allowed to stay updated with events and notifications at institution.</p>
+ 
+</article>
+
+
+</div>
+
+
+    <%= yield %>
+  </body>
+
+<footer>Copyright © fixnix</footer>
+</html>

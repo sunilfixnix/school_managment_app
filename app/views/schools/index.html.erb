@@ -1,0 +1,14 @@
+
+<h2> List of the school </h2>
+<br/>
+
+<% @school.each do |s| %>
+
+<%= s.name %><br/>
+<%= s.address %><br/>
+<%= s.team %><br/>
+<%= s.course_offer %><br/><br/>
+
+<% end %>
+
+<%= link_to 'New school', schools_schools_new_path %>

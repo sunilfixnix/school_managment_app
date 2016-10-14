@@ -1,0 +1,16 @@
+<h2> List of the students in each section </h2>
+
+<% @student.each do |stu| %>
+
+	<%= stu.first_name %><br/>
+	<%= stu.last_name %><br/>
+	<%= stu.age %><br/>
+	<%= stu.email_id%><br/>
+	<%= stu.phone_no %><br/>
+	<%= stu.address %><br/><br/>
+
+	<% end %>
+	<%= link_to 'New student',  students_students_new_path %>
+
+	
+	

@@ -1,0 +1,27 @@
+<h2> Update the Student data as per standard and Section</h2>
+
+<%= form_for @student, :url =>{:action => "update", :id =>@student} do |f| %>
+
+	<%= f.label :first_name %><br/>
+	<%= f.text_field :first_name %><br/>
+	<%= f.label :last_name %><br/>
+	<%= f.text_field :last_name %><br/>
+	<%= f.label :age %><br/>
+	<%= f.text_field :age %><br/>
+	<%= f.label :email_id %><br/>
+	<%= f.text_field :email_id %><br/>
+	<%= f.label :phone_no %><br/>
+	<%= f.text_field :phone_no %><br/>
+	<%= f.label :address %><br/>
+	<%= f.text_field :address %><br/>
+	<%= f.label :section_id %><br/>
+	<%= f.text_field :section_id %><br/>
+
+
+
+	<div class="actions">
+    <%= f.submit "Update" %><br/> 
+  </div> 
+
+
+	<% end %>

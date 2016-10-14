@@ -1,0 +1,10 @@
+
+<h2> Result list based on the performance of student in the exams </h2>
+
+<% @result.each do |res| %>
+<%= res.status%><br/>
+<%= res.marks %><br/>
+<%= res.division %><br/><br/>
+<% end %>
+
+<%= link_to 'Create New Result', results_results_new_path %>

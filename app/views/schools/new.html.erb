@@ -1,0 +1,23 @@
+
+<h2> Create New School Data </h2>
+
+<%= form_for(@school) do |f| %>  
+
+
+ 
+	<%= f.label :name %><br/> 
+    <%= f.text_field :name %><br/> 
+    <%= f.label :address %><br/> 
+
+    <%= f.text_area :address %> <br/> 
+    <%= f.label :team %><br/> 
+    <%= f.text_field :team %> <br/> 
+    <%= f.label :course_offer %><br/> 
+    <%= f.text_area :course_offer %><br/><br/>  
+  </div> 
+
+  <div class="actions">
+    <%= f.submit "Create" %><br/> 
+  </div> 
+
+<% end %>

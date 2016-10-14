@@ -1,0 +1,16 @@
+<h2> List of the school by ID </h2>
+<br/>
+
+
+<%= @school.name %><br/>
+<%= @school.address %><br/>
+<%= @school.team %><br/>
+<%= @school.course_offer %><br/><br/>
+
+ <% @standard.each do |std| %>
+ <%= std.name %><br/><br/>
+<!--  <%= std.school.name %> -->
+ <%end%>
+
+
+<%= link_to 'Edit', schools_schools_edit_path %>

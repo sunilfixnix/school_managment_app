@@ -1,0 +1,27 @@
+<h2> Create New Result </h2>
+
+<%= form_for(@result) do |f| %>  
+
+
+ 
+	  <%= f.label :status %><br/> 
+    <%= f.text_field :status %><br/> 
+    <%= f.label :marks %><br/> 
+    <%= f.text_field :marks %> <br/> 
+    <%= f.label :division %><br/> 
+    <%= f.text_field :division %> <br/> 
+    <%= f.label :subject_id %><br/> 
+    <%= f.text_field :subject_id %><br/> 
+     <%= f.label :student_id %><br/> 
+    <%= f.text_field :student_id %> <br/> 
+    <%= f.label :standard_id %><br/> 
+    <%= f.text_field :standard_id %> <br/>
+        <%= f.label :exam_id %><br/> 
+    <%= f.text_field :exam_id %> <br/><br/> 
+  </div> 
+
+  <div class="actions">
+    <%= f.submit "Create" %><br/> 
+  </div> 
+
+<% end %>

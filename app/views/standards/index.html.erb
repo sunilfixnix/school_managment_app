@@ -1,0 +1,9 @@
+<h2> standareds list in school </h2>
+ 
+ <% @standard.each do |std| %>
+ <%= std.name %><br/></br>
+  <!-- <%= std.school_id %><br/></br>
+ -->
+ <% end %>
+
+<%= link_to 'New standard', standards_standards_new_path %>

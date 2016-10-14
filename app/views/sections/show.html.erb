@@ -1,0 +1,27 @@
+<h2> Sections list in each standard in school by ID </h2>
+	<%= @section.name %><br/>
+
+	<% @student.each do |stu| %>
+
+	<%= stu.first_name %><br/>
+	<%= stu.last_name %><br/>
+	<%= stu.age %><br/>
+	<%= stu.email_id %><br/>
+	<%= stu.phone_no %><br/>
+	<%= stu.address %><br/>
+	<%= stu.section_id %><br/>
+	<%= stu.section.name %><br/><br/>
+	
+       <% end %>
+
+   
+    <% @exam.each do |ex| %>
+	<%= ex.name %><br/>
+	<%= ex.start_date %><br/>
+	<%= ex.end_date %><br/>
+	<%= ex.section.name %><br/><br/>
+
+	<% end %>
+
+
+	

@@ -1,0 +1,18 @@
+<h2> Update data for standard in school </h2>
+
+<%= form_for @standard, :url =>{:action => "update", :id =>@standard} do |f| %>
+
+	<%= f.label :name %><br/> 
+    <%= f.text_field :name %><br/> 
+    
+	<%= f.label :school_id %><br/> 
+    <%= f.text_field :school_id %><br/> 
+    
+
+   
+
+    <div class "action" >
+    <%= f.submit "Update" %><br/> 
+  </div> 
+
+<% end %>

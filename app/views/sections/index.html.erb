@@ -1,0 +1,7 @@
+<h2> Sections list in each standard in school </h2>
+
+<% @section.each do |sec| %>
+	<%= sec.name %><br/>
+	<% end %>
+
+	<%= link_to 'New section', sections_sections_new_path %>
