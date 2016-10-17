@@ -20,6 +20,7 @@ class SchoolsController < ApplicationController
 
 		 @school = School.new(school_params) 
   if @school.save 
+  	 SchoolMailer.sample_email(@school).deliver
     redirect_to schools_path 
   else 
     render 'new' 
@@ -34,7 +35,7 @@ class SchoolsController < ApplicationController
 
 	def update
 
-		  @school = School.find(params[:id]) 
+     @school = School.find(params[:id]) 
   if @school.update_attributes(school_params) 
     redirect_to schools_path
 
@@ -46,12 +47,10 @@ class SchoolsController < ApplicationController
 	end
 
 
-
-
 private 
 
   def school_params 
-    params.require(:school).permit(:id, :name, :address, :team, :course_offer) 
+    params.require(:school).permit(:id, :name, :address, :team, :course_offer, :email) 
   end
 
 end

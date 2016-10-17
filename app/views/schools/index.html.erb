@@ -1,14 +1,54 @@
 
-<h2> List of the school </h2>
-<br/>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2> List of the schools </h2>
+
+<table>
+
+<tr>
+<th>name</th>
+<th>address</th>
+<th>team</th>
+<th>course_offer</th>
+<th>email</th>
+</tr>
+<tr>
 
 <% @school.each do |s| %>
 
-<%= s.name %><br/>
-<%= s.address %><br/>
-<%= s.team %><br/>
-<%= s.course_offer %><br/><br/>
+<td><%= s.name %></td>
+<td><%= s.address %></td>
+<td><%= s.team %></td>
+<td><%= s.course_offer %></td>
+<td><%= s.email %></td>
+
+</tr>
 
 <% end %>
+
+
+</table>
+</body>
+</html>
 
 <%= link_to 'New school', schools_schools_new_path %>

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   patch '/schools/:id' => "schools#update"
 
 
+
   get '/standards/' => "standards#index"
   get '/standards/:id' => "standards#show"
   get '/standards/:id/sections/subjects' => "standards#show"
@@ -31,7 +32,7 @@ Rails.application.routes.draw do
   post 'students' => "students#create"
   get '/students/students/new' => "students#new"
   get '/students/:id/students/edit' => "students#edit"
-  put '/students/:id' => "students#update"
+  patch '/students/:id' => "students#update"
 
 
   get '/teachers/' => "teachers#index"

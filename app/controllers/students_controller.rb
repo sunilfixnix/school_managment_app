@@ -41,9 +41,8 @@ class StudentsController < ApplicationController
 
 			if @student.update_attributes(student_params)
 
-				 redirect_to(:action => 'edit', :id => @student.id) 
+				 redirect_to students_path
   else 
-
     render 'edit' 
     
   end 

@@ -1,15 +1,59 @@
+
+
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
 <h2> List of the students in each section </h2>
+
+<table>
+
+<tr>
+<th>first_name</th>
+<th>last_name</th>
+<th>age</th>
+<th>email_id</th>
+<th>phone_no</th>
+<th>address</th>
+</tr>
+<tr>
+
 
 <% @student.each do |stu| %>
 
-	<%= stu.first_name %><br/>
-	<%= stu.last_name %><br/>
-	<%= stu.age %><br/>
-	<%= stu.email_id%><br/>
-	<%= stu.phone_no %><br/>
-	<%= stu.address %><br/><br/>
-
+	<td><%= stu.first_name %></td>
+	<td><%= stu.last_name %></td>
+	<td><%= stu.age %></td>
+	<td><%= stu.email_id%></td>
+	<td><%= stu.phone_no %></td>
+	<td><%= stu.address %></td>
+</tr>
 	<% end %>
+
+
+</table>
+</body>
+</html>
+
+	<br/>
 	<%= link_to 'New student',  students_students_new_path %>
 
 	

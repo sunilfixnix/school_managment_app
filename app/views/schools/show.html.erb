@@ -5,7 +5,9 @@
 <%= @school.name %><br/>
 <%= @school.address %><br/>
 <%= @school.team %><br/>
-<%= @school.course_offer %><br/><br/>
+
+<%= @school.course_offer %><br/>
+<%= @school.email %><br/><br/>
 
  <% @standard.each do |std| %>
  <%= std.name %><br/><br/>
@@ -13,4 +15,5 @@
  <%end%>
 
 
-<%= link_to 'Edit', schools_schools_edit_path %>
+<%=link_to 'Edit', "schools/edit" %>
+
