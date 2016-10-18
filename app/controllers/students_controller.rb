@@ -21,6 +21,7 @@ class StudentsController < ApplicationController
 
 		 @student = Student.new(student_params) 
   if @student.save 
+  	StudentMailer.sample_email(@student).deliver
     redirect_to students_path
   else 
     render 'new' 
